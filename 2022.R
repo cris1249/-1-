@@ -1,0 +1,12 @@
+install.packages("pastecs")
+library(pastecs)
+stat.desc(dat, norm = TRUE)
+
+hist(dat$Sepal.Length)
+boxplot(dat$sepal.Length ~ dat$Species)
+qqnorm(dat$Sepal.Length)
+install.packages("car")
+library(car)
+qqplot(dat$Sepal.Length)
+library(ggplot2)
+ggplot(dat) + aes(x = Sepal.Length + )
